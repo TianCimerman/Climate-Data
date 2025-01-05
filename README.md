@@ -20,8 +20,6 @@ sudo apt-get update && sudo apt-get install influxdb2
 sudo service influxdb status
 
 192.168.1.120:8086
-Username: cimerman
-Pasword: dobovica2a
 Organization: family
 Bucket name: data
 Superuser privlieges token: OiFi2N0OzO6e633jnmVSvIXJ0lk32-lEvBNt6Kytkz7q-EmKXbGkvJKM4dzGFXJ6TftQ8Lvjoa8TIvO8lsGNLA==
