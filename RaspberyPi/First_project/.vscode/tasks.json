@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        { 
+            "label": "RaspberryPiDeploy", 
+            "type": "shell", 
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "close": true
+            }, 
+            "windows": { 
+                "command": "scp -r -i ~/.ssh/idrs2w C:/Users/tianc/First_project pi@192.168.1.140:/home/pi; cmd /c start powershell -Command {ssh -t -i ~/.ssh/idrs2w pi@192.168.1.140 'python3 /home/pi/First_project/project.py'}; sleep 1" 
+            }, 
+            "problemMatcher": [] 
+        },
+        {
+            "label": "cleanupOnPi",
+            "type": "shell",
+            "command": "ssh -i ~/.ssh/idrs2w pi@192.168.1.140 'pkill -9 python'"
+        }
+    ]
+}
